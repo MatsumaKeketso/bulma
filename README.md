@@ -207,3 +207,172 @@ function MyComponent() {
 
 export default MyComponent;
 ```
+
+# NavItem Component
+
+The NavItem component is a versatile UI element for creating navigation items in your React applications. It is similar in behavior to the Button component but uses an anchor (`<a>`) tag as the root element, making it suitable for navigation links.
+
+## Props
+
+The NavItem component shares the same set of props as the Button component:
+
+- `startIcon` (optional): Accepts any ReactComponent SVG icon as the starting icon for the navigation item. For example, you can use `<MenuIcon />`.
+
+- `endIcon` (optional): Similar to `startIcon`, this prop lets you add an SVG icon at the end of the navigation item.
+
+- `onClick` (optional): This prop is an event handler that you can attach to the navigation item, defining the action to be taken when the item is clicked.
+
+- `color` (optional): The `color` prop allows you to specify the color of the navigation item. You can choose from the following options:
+  - `primary`
+  - `link`
+  - `info`
+  - `success`
+  - `warning`
+  - `danger`
+  - `white`
+
+## Example
+
+Here's an example of how you can use the NavItem component in your React application:
+
+```jsx
+import React from "react";
+import NavItem from "./NavItem";
+import MenuIcon from "./MenuIcon"; // Import your SVG icon component
+
+function MyNavigation() {
+  return (
+    <nav>
+      <NavItem
+        startIcon={<MenuIcon />} // Add your SVG icon here
+        href="/about"
+        color="primary"
+      >
+        About Us
+      </NavItem>
+      <NavItem
+        endIcon={<MenuIcon />} // You can also add an icon at the end
+        href="/contact"
+        color="link"
+      >
+        Contact Us
+      </NavItem>
+    </nav>
+  );
+}
+
+export default MyNavigation;
+```
+
+# Container Component
+
+The Container component is a versatile layout element that helps you manage the width and padding of content within your React applications. It adapts to different screen sizes to ensure a responsive and visually pleasing design.
+
+## Props
+
+The Container component accepts the default `children` prop, which allows you to nest other components or content within it.
+
+## Responsive Design
+
+The Container component is designed with responsiveness in mind. It adjusts its padding based on the screen size to provide a seamless user experience. The following CSS rules are applied for responsiveness:
+
+### Small Screens (max-width: 767px)
+
+For screens with a maximum width of 767 pixels (typically small screens), the Container component applies the following CSS rule:
+
+```css
+.container--main {
+  padding: 0px 20px;
+}
+```
+
+### Medium-sized Screens (min-width: 768px and max-width: 991px)
+
+For screens ranging from 768 pixels to 991 pixels (typical tablet screens), the Container component uses the following CSS rule:
+
+```css
+.container--main {
+  padding: 0px 6vw;
+}
+```
+
+### Large Screens (min-width: 992px)
+
+For screens larger than 992 pixels (typical desktops and laptops), the Container component employs the following CSS rule:
+
+```css
+.container--main {
+  padding: 0px 12vw;
+}
+```
+
+### Example
+
+For screens larger than 992 pixels (typical desktops and laptops), the Container component employs the following CSS rule:
+
+```jsx
+import React from "react";
+import Container from "./Container";
+import Typography from "./Typography";
+
+function MyPage() {
+  return (
+    <Container>
+      <Typography.Heading variant="is-2">
+        Welcome to My Website
+      </Typography.Heading>
+      <Typography.Body>
+        This is some content within the container.
+      </Typography.Body>
+      {/* Add more components and content here */}
+    </Container>
+  );
+}
+
+export default MyPage;
+```
+
+# Case Studies Card Component
+
+The Case Studies Card component is designed for showcasing case studies or featured content in your React application. It provides an engaging card layout with a background image and styled typography.
+
+## Usage
+
+You can use the `CaseStudiesCard` component in your React application as follows:
+
+```jsx
+import React from "react";
+import CaseStudiesCard from "./CaseStudiesCard";
+
+function MyPage() {
+  return (
+    <CaseStudiesCard
+      image="/path/to/your/image.jpg"
+      title="Case Study Title"
+      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    />
+  );
+}
+
+export default MyPage;
+```
+# Navbar Component
+
+The Navbar component is a crucial part of your website's user interface, providing navigation and branding elements. It offers a responsive design that adapts to different screen sizes and includes various components such as logos, menu icons, buttons, and navigation items.
+
+## Usage
+
+You can use the `Navbar` component in your React application as follows:
+
+```jsx
+import React from "react";
+import Navbar from "./Navbar";
+
+function MyPage() {
+  return (
+    <Navbar />
+  );
+}
+
+export default MyPage;
+```

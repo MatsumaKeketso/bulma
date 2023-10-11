@@ -4,7 +4,7 @@ import "./style.scss";
 function HeadingTag({ label, color }) {
   return (
     <div className="heading-tag--main">
-      <Typography.Subtitle variant="is-4" color>
+      <Typography.Subtitle variant="is-4" color={color}>
         {label}
       </Typography.Subtitle>
     </div>

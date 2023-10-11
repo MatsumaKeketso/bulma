@@ -1,8 +1,9 @@
 import React from "react";
 import "./style.scss";
-import Container from "../Container";
-import HeadingTag from "../HeadingTag";
-import { Typography } from "../Typography";
+import Container from "../../components/Container";
+import HeadingTag from "../../components/HeadingTag";
+import { Typography } from "../../components/Typography";
+
 const Footer = () => {
   const links = [
     "Terms of service",
