@@ -56,7 +56,7 @@ The palette enables you to modify the color of the components to suit your brand
 |         | active  | ![#3082c5](https://placehold.co/15x15/3082c5/3082c5.png) `#3082c5` |
 |         | dark    | ![#1d72aa](https://placehold.co/15x15/1d72aa/1d72aa.png) `#1d72aa` |
 | Success | light   | ![#f0faf4](https://placehold.co/15x15/f0faf4/f0faf4.png) `#f0faf4` |
-|         | main    | ![#f0faf4](https://placehold.co/15x15/f0faf4/f0faf4.png) `#f0faf4` |
+|         | main    | ![#48c78e](https://placehold.co/15x15/f0faf4/48c78e.png) `#48c78e` |
 |         | hover   | ![#3ec487](https://placehold.co/15x15/3ec487/3ec487.png) `#3ec487` |
 |         | active  | ![#3abb81](https://placehold.co/15x15/3abb81/3abb81.png) `#3abb81` |
 |         | dark    | ![#257942](https://placehold.co/15x15/257942/257942.png) `#257942` |
