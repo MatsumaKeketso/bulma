@@ -139,9 +139,9 @@ import Typography from './Typography';
 function MyComponent() {
   return (
     <div>
-      <Typography variant="is-3" bold color="primary" textAlign="center">
+      <Typography.Heading variant="is-3" bold color="primary" textAlign="center">
         This is a bold, centered heading.
-      </Typography>
+      </Typography.Heading>
       <Typography.Subtitle>
         Subtitle text here.
       </Typography.Subtitle>
