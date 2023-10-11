@@ -1,0 +1,14 @@
+.heading-tag--main {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 50px;
+}
+.heading-tag--main::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  width: 40px;
+  height: 4px;
+  background: var(--primary-active, #d100c9);
+}

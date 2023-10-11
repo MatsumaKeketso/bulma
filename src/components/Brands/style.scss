@@ -1,0 +1,31 @@
+.brand-logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 90px;
+  padding: 90px 0px;
+  align-items: center;
+  justify-items: center;
+  transition: ease-in-out 0.2s;
+}
+@media (max-width: 767px) {
+  /* Your CSS rules for small screens go here */
+  .brand-logos {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* For screens between 768px and 992px (typical tablets) */
+@media (min-width: 768px) and (max-width: 1389px) {
+  /* Your CSS rules for medium-sized screens go here */
+  .brand-logos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* For screens larger than 992px (typical desktops and laptops) */
+@media (min-width: 1390px) {
+  /* Your CSS rules for large screens go here */
+  .brand-logos {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}

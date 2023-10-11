@@ -1,0 +1,9 @@
+.what-we-do-card--main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  .icon {
+    width: 64px;
+    height: 64px;
+  }
+}

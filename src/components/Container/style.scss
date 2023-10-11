@@ -1,0 +1,25 @@
+.container--main {
+  padding: 0px 20px;
+}
+@media (max-width: 767px) {
+  /* Your CSS rules for small screens go here */
+  .container--main {
+    padding: 0px 20px;
+  }
+}
+
+/* For screens between 768px and 992px (typical tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Your CSS rules for medium-sized screens go here */
+  .container--main {
+    padding: 0px 6vw;
+  }
+}
+
+/* For screens larger than 992px (typical desktops and laptops) */
+@media (min-width: 992px) {
+  /* Your CSS rules for large screens go here */
+  .container--main {
+    padding: 0px 12vw;
+  }
+}

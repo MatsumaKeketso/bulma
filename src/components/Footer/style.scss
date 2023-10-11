@@ -1,0 +1,62 @@
+.footer--main {
+  background: var(--primary-dark);
+  color: var(--shades-white);
+  padding: 90px 0px;
+  .content {
+    display: grid;
+    gap: 50px;
+    .contact-us {
+      display: grid;
+      grid-template-columns: 1fr 30%;
+      gap: 20px;
+    }
+    .links {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      gap: 10px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  /* Your CSS rules for small screens go here */
+  .footer--main {
+    .content {
+      .contact-us {
+        grid-template-columns: 1fr;
+      }
+      .links {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
+/* For screens between 768px and 992px (typical tablets) */
+@media (min-width: 768px) and (max-width: 1389px) {
+  /* Your CSS rules for medium-sized screens go here */
+  .footer--main {
+    .content {
+      .contact-us {
+        grid-template-columns: 1fr 30%;
+      }
+      .links {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  }
+}
+
+/* For screens larger than 992px (typical desktops and laptops) */
+@media (min-width: 1390px) {
+  /* Your CSS rules for large screens go here */
+  .footer--main {
+    .content {
+      .contact-us {
+        grid-template-columns: 1fr 30%;
+      }
+      .links {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      }
+    }
+  }
+}

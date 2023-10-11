@@ -1,0 +1,21 @@
+.hero {
+  background: url(../../assets/images/hero-bg-image.png);
+  background-size: cover;
+  background-position: center;
+  .hero-content {
+    box-sizing: border-box;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 90px 0px;
+    div {
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      align-content: start;
+      justify-content: flex-end;
+      align-items: start;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.navbar--main {
+  box-sizing: border-box;
+  background: var(--primary-main);
+  height: 80px;
+  display: grid;
+  align-items: center;
+  width: 100%;
+  position: sticky;
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .start-section {
+      display: flex;
+      flex: 1;
+      align-items: center;
+    }
+    .center-section {
+      display: flex;
+    }
+    .end-section {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: end;
+    }
+    .menu {
+      display: none;
+      margin: 0px 5pxs;
+    }
+  }
+}
+@media (max-width: 767px) {
+  /* Your CSS rules for small screens go here */
+  .navbar--main {
+    .wrapper {
+      grid-template-columns: 1fr 1fr;
+      .center-section {
+        display: none;
+      }
+      .end-section {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: end;
+      }
+      .menu {
+        display: block;
+      }
+    }
+  }
+}
+
+/* For screens between 768px and 992px (typical tablets) */
+@media (min-width: 768px) and (max-width: 1349px) {
+  /* Your CSS rules for medium-sized screens go here */
+  .services--main {
+    grid-template-columns: 1fr 1fr;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+/* For screens larger than 992px (typical desktops and laptops) */
+@media (min-width: 1350px) {
+  /* Your CSS rules for large screens go here */
+  .services--main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,71 @@
+@import url(../../assets/fonts/font.scss);
+// Global font styles
+.main-typography {
+  font-family: "Inter";
+  margin: 0px;
+}
+.bold {
+  font-weight: bold;
+}
+.underline {
+  text-decoration: underline;
+}
+// Heading Styles
+.heading--is-1 {
+  font-size: 48px;
+}
+.heading--is-2 {
+  font-size: 40px;
+}
+.heading--is-3 {
+  font-size: 32px;
+}
+.heading--is-4 {
+  font-size: 24px;
+}
+.heading--is-5 {
+  font-size: 20px;
+}
+.heading--is-6 {
+  font-size: 16px;
+}
+
+// Subtitle Styles
+.subtitle--is-1 {
+  font-size: 48px;
+}
+.subtitle--is-2 {
+  font-size: 40px;
+}
+.subtitle--is-3 {
+  font-size: 32px;
+}
+.subtitle--is-4 {
+  font-size: 24px;
+}
+.subtitle--is-5 {
+  font-size: 20px;
+}
+.subtitle--is-6 {
+  font-size: 16px;
+}
+.subtitle--is-7 {
+  font-size: 12px;
+}
+
+// Body Styling
+.body--12 {
+  font-size: 12px;
+}
+.body--14 {
+  font-size: 14px;
+}
+.body--16 {
+  font-size: 16px;
+}
+.body--20 {
+  font-size: 20px;
+}
+.body--24 {
+  font-size: 24px;
+}
