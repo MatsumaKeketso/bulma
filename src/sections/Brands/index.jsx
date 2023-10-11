@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.scss";
-
 import { ReactComponent as VisaLogo } from "../../assets/images/brand-logos/visa-black.svg";
 import { ReactComponent as TymeBankLogo } from "../../assets/images/brand-logos/tyme-bank-black.svg";
 import { ReactComponent as DistelLogo } from "../../assets/images/brand-logos/distell-black 1.svg";

@@ -1,6 +1,6 @@
 import React from "react";
-import { Typography } from "../Typography";
 import "./style.scss";
+import { Typography } from "../Typography";
 function WhatWeDoCard({ icon, heading, text }) {
   return (
     <div className="what-we-do-card--main">

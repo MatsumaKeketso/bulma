@@ -46,6 +46,7 @@ function WhatWeDo() {
           <div className="services--main">
             {Services.map((service) => (
               <WhatWeDoCard
+                key={service.title}
                 icon={service.icon}
                 heading={service.title}
                 text={service.text}

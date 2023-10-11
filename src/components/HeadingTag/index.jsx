@@ -1,6 +1,6 @@
 import React from "react";
-import { Typography } from "../Typography";
 import "./style.scss";
+import { Typography } from "../Typography";
 function HeadingTag({ label, color }) {
   return (
     <div className="heading-tag--main">

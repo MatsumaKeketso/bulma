@@ -1,6 +1,6 @@
 import React from "react";
-import { Typography } from "../Typography";
 import "./style.scss";
+import { Typography } from "../Typography";
 import { Colours } from "../../assets/Colors";
 /**
  *

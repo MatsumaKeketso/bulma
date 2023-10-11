@@ -42,7 +42,7 @@ const Footer = () => {
               </Typography.Link>
             </Typography.Body>
           </div>
-          <div class="links">
+          <div className="links">
             {links.map((link) => {
               return (
                 <Typography.Body key={link} color="white">

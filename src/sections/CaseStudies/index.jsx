@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./style.scss";
-import { MainService } from "../../services/WhatweDoService";
 import Container from "../../components/Container";
 import Section from "../../components/Section";
 import HeadingTag from "../../components/HeadingTag";
 import CaseStudiesCard from "../../components/CaseStudiesCard";
+import { MainService } from "../../services/WhatWeDoService";
 
 function CaseStudies() {
   const [caseStudies, setCaseStudies] = useState([]);

@@ -1,7 +1,5 @@
 import React from "react";
 import "./App.scss";
-import { useEffect, useState } from "react";
-import { MainService } from "./services/WhatweDoService";
 import Navbar from "./components/NavBar";
 
 import Section from "./components/Section";
