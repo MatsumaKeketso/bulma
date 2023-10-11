@@ -26,7 +26,7 @@ const Footer = () => {
     <div className="footer--main">
       <Container>
         <div className="content">
-          <HeadingTag label="Contact us" />
+          <HeadingTag label="Contact us" color={'white'} />
           <div className="contact-us">
             <Typography.Heading variant="is-2" color="white">
               Have a project in mind? Let's make it happen
