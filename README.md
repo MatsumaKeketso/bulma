@@ -84,47 +84,80 @@ The palette enables you to modify the color of the components to suit your brand
 
 ---
 
-## Typography
+# Typography Component
 
-#### Heading
+The Typography component is a powerful tool for managing text styles in your React applications. It allows you to easily control the appearance of text within your components. This component provides flexibility through various props to customize the typography.
 
-Heading comes with 6 variants by default
-`<Typography.Heading variant="is-1"> Hello World </Typography.Heading>`
+## Props
 
-- is-1 : 48
-- is-2 : 40
-- is-3 : 32
-- is-4 : 24
-- is-5 : 20
-- is-6 : 16
+The Typography component accepts the following props:
 
-#### Subtitle
+- `variant` (optional): Specifies the text variant. You can choose from a variety of predefined variants to control the typography style.
 
-Subtitle comes with 7 variants by default
-`<Typography.Subtitle variant="is-1"> Hello World </Typography.Subtitle>`
+- `bold` (optional): Determines whether the text should be displayed in bold. You can set it to `true` for bold text.
 
-- is-1 : 48
-- is-2 : 40
-- is-3 : 32
-- is-4 : 24
-- is-5 : 20
-- is-6 : 16
-- is-7 : 12
+- `color` (optional): Defines the text color. You can specify a color to give your text a specific hue.
 
-#### Body
+- `textAlign` (optional): Sets the text alignment. You can align text to the left, right, center, or justify the text.
 
-Body comes with 7 sizes by default that can be bolded or
-`<Typography.Body size="16"> Hello World </Typography.Body>`
+## Subcomponents
 
-- 12 : 12
-- 14 : 14
-- 16 : 16
-- 20 : 20
-- 24 : 24
+### Heading
 
----
+- Default `variant`: "is-1"
 
-#### Components
+The `Heading` subcomponent allows you to create prominent titles and headings for your content. By default, it uses the "is-1" variant, which provides large, attention-grabbing text.
+
+### Subtitle
+
+- Default `variant`: "is-1"
+
+The `Subtitle` subcomponent is suitable for secondary titles or subtitles within your content. Like the `Heading`, it also defaults to the "is-1" variant.
+
+### Body
+
+- Default `variant`: None
+- Default font size: 16
+
+The `Body` subcomponent is designed for regular body text. It does not have a default variant, and its default font size is set to 16 pixels.
+
+### Link
+
+- Default `variant`: None
+- Default font size: 16
+
+The `Link` subcomponent allows you to create hyperlinks within your content. It does not have a default variant, and its default font size is also set to 16 pixels.
+
+## Example
+
+Here's an example of how you can use the Typography component and its subcomponents in your React application:
+
+```jsx
+import React from 'react';
+import Typography from './Typography';
+
+function MyComponent() {
+  return (
+    <div>
+      <Typography variant="is-3" bold color="primary" textAlign="center">
+        This is a bold, centered heading.
+      </Typography>
+      <Typography.Subtitle>
+        Subtitle text here.
+      </Typography.Subtitle>
+      <Typography.Body color="info">
+        This is the body text with an info color.
+      </Typography.Body>
+      <Typography.Link variant="is-5" bold>
+        <a href="https://example.com">Visit Example</a>
+      </Typography.Link>
+    </div>
+  );
+}
+
+export default MyComponent;
+```
+
 # Button Component
 
 The Button component is a versatile UI element that allows you to create interactive buttons for your React applications. It supports various props to customize its appearance and behavior.
@@ -151,16 +184,16 @@ The Button component is a versatile UI element that allows you to create interac
 Here's an example of how you can use the Button component in your React application:
 
 ```jsx
-import React from 'react';
-import Button from './Button';
-import MenuIcon from './MenuIcon'; // Import your SVG icon component
+import React from "react";
+import Button from "./Button";
+import MenuIcon from "./MenuIcon"; // Import your SVG icon component
 
 function MyComponent() {
   return (
     <div>
       <Button
         startIcon={<MenuIcon />} // Add your SVG icon here
-        onClick={() => alert('Button clicked')}
+        onClick={() => alert("Button clicked")}
         color="primary"
       >
         Click Me
@@ -170,3 +203,4 @@ function MyComponent() {
 }
 
 export default MyComponent;
+```
