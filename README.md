@@ -133,23 +133,26 @@ The `Link` subcomponent allows you to create hyperlinks within your content. It 
 Here's an example of how you can use the Typography component and its subcomponents in your React application:
 
 ```jsx
-import React from 'react';
-import Typography from './Typography';
+import React from "react";
+import Typography from "./Typography";
 
 function MyComponent() {
   return (
     <div>
-      <Typography.Heading variant="is-3" bold color="primary" textAlign="center">
+      <Typography.Heading
+        variant="is-3"
+        bold
+        color="primary"
+        textAlign="center"
+      >
         This is a bold, centered heading.
       </Typography.Heading>
-      <Typography.Subtitle>
-        Subtitle text here.
-      </Typography.Subtitle>
+      <Typography.Subtitle>Subtitle text here.</Typography.Subtitle>
       <Typography.Body color="info">
         This is the body text with an info color.
       </Typography.Body>
-      <Typography.Link variant="is-5" bold>
-        <a href="https://example.com">Visit Example</a>
+      <Typography.Link variant="is-5" bold href="https://example.com">
+        Visit Example
       </Typography.Link>
     </div>
   );
