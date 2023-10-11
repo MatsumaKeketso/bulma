@@ -1,9 +1,6 @@
 import React from "react";
 import "./style.scss";
-import HeadingTag from "../HeadingTag";
-import { Typography } from "../Typography";
-import Container from "../Container";
-import Section from "../Section";
+
 import { ReactComponent as VisaLogo } from "../../assets/images/brand-logos/visa-black.svg";
 import { ReactComponent as TymeBankLogo } from "../../assets/images/brand-logos/tyme-bank-black.svg";
 import { ReactComponent as DistelLogo } from "../../assets/images/brand-logos/distell-black 1.svg";
@@ -19,6 +16,10 @@ import { ReactComponent as TFGLogo } from "../../assets/images/brand-logos/tfg-b
 import { ReactComponent as SanlamLogo } from "../../assets/images/brand-logos/sanlam-black 1.svg";
 import { ReactComponent as SantamLogo } from "../../assets/images/brand-logos/santam-black 1.svg";
 import { ReactComponent as BBCLogo } from "../../assets/images/brand-logos/bbc-black 1.svg";
+import Container from "../../components/Container";
+import Section from "../../components/Section";
+import HeadingTag from "../../components/HeadingTag";
+import { Typography } from "../../components/Typography";
 const Brands = () => {
   return (
     <div>

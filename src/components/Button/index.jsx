@@ -7,8 +7,6 @@ import { Colours } from "../../assets/Colors";
  * @param {string} children text to be displayed  (passed between open and closing tag)
  * @param {ReactElement} startIcon start icon
  * @param {ReactElement} endIcon end icon
- * @param {string} variant filled || outline || subtle || text
- * @param {string} size large || medium || small
  * @param {Event} onClick click event
  * @param {string} color primary || link || info || success || warning || danger || white
  * @returns
@@ -17,8 +15,6 @@ const Button = ({
   children,
   startIcon,
   endIcon,
-  variant = "filled",
-  size,
   onClick,
   color = "primary",
 }) => {

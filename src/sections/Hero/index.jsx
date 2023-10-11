@@ -1,8 +1,9 @@
 import React from "react";
 import "./style.scss";
-import Container from "../Container";
-import { Typography } from "../Typography";
-import Button from "../Button";
+import Container from "../../components/Container";
+import { Typography } from "../../components/Typography";
+import Button from "../../components/Button";
+
 function Hero() {
   return (
     <div className="hero">

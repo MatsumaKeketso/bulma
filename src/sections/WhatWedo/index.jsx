@@ -1,14 +1,16 @@
 import React from "react";
 import "./style.scss";
-import Container from "../Container";
-import HeadingTag from "../HeadingTag";
-import { Typography } from "../Typography";
-import WhatWeDoCard from "../WhatWeDoCard";
+
 import { ReactComponent as WebDevIcon } from "../../assets/images/icons/Web_Dev_Icon.svg";
 import { ReactComponent as AppDevIcon } from "../../assets/images/icons/App Dev Icon.svg";
 import { ReactComponent as UXDevIcon } from "../../assets/images/icons/UX Icon.svg";
 import { ReactComponent as BlockchainIcon } from "../../assets/images/icons/Blockhain.svg";
-import Section from "../Section";
+import Container from "../../components/Container";
+import Section from "../../components/Section";
+import HeadingTag from "../../components/HeadingTag";
+import { Typography } from "../../components/Typography";
+import WhatWeDoCard from "../../components/WhatWeDoCard";
+
 const Services = [
   {
     icon: <WebDevIcon />,

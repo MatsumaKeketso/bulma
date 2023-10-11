@@ -1,0 +1,91 @@
+.navitem--main {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: ease-in-out 0.2s;
+  margin: 0px 2px;
+}
+.primary {
+  background-color: var(--primary-main);
+}
+.primary:hover {
+  background-color: var(--primary-hover);
+  box-shadow: var(--primary-focus);
+}
+.primary:active {
+  background-color: var(--primary-active);
+  box-shadow: var(--primary-focus);
+}
+
+.link {
+  background-color: var(--link-main);
+}
+.link:hover {
+  background-color: var(--link-hover);
+  box-shadow: var(--link-focus);
+}
+.link:active {
+  background-color: var(--link-active);
+  box-shadow: var(--link-focus);
+}
+
+.info {
+  background-color: var(--info-main);
+}
+.info:hover {
+  background-color: var(--info-hover);
+  box-shadow: var(--info-focus);
+}
+.info:active {
+  background-color: var(--info-active);
+  box-shadow: var(--info-focus);
+}
+
+.success {
+  background-color: var(--success-main);
+}
+.success:hover {
+  background-color: var(--success-hover);
+  box-shadow: var(--black-focus);
+}
+.success:active {
+  background-color: var(--success-active);
+  box-shadow: var(--black-focus);
+}
+
+.warning {
+  background-color: var(--warning-main);
+}
+.warning:hover {
+  background-color: var(--warning-hover);
+  box-shadow: var(--warning-focus);
+}
+.warning:active {
+  background-color: var(--warning-active);
+  box-shadow: var(--warning-focus);
+}
+
+.danger {
+  background-color: var(--danger-main);
+}
+.danger:hover {
+  background-color: var(--danger-hover);
+  box-shadow: var(--danger-focus);
+}
+.danger:active {
+  background-color: var(--danger-active);
+  box-shadow: var(--danger-focus);
+}
+
+.white {
+  background-color: var(--shades-200);
+}
+.white:hover {
+  background-color: var(--shades-300);
+  box-shadow: var(--light-focus);
+}
+.white:active {
+  background-color: var(--shades-400);
+  box-shadow: var(--light-focus);
+}

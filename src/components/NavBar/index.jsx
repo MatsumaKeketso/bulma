@@ -4,7 +4,8 @@ import Container from "../Container";
 import { ReactComponent as Logo } from "./../../assets/images/logo/logo.svg";
 import { ReactComponent as MenuIcon } from "./../../assets/images/icons/menu-icon.svg";
 import Button from "../Button";
-const Navbar = ({ links = [] }) => {
+import NavItem from "../NavItem";
+const Navbar = () => {
   return (
     <div className="navbar--main">
       <Container>
@@ -13,14 +14,14 @@ const Navbar = ({ links = [] }) => {
             <Logo />
           </div>
           <div className="center-section">
-            <Button>Services</Button>
-            <Button>Industries</Button>
-            <Button>Cases</Button>
-            <Button>Contact</Button>
+            <NavItem>Services</NavItem>
+            <NavItem>Industries</NavItem>
+            <NavItem>Cases</NavItem>
+            <NavItem>Contact</NavItem>
           </div>
 
           <div className="end-section">
-            <Button color="white">Let's Talk</Button>
+            <NavItem color="white">Let's Talk</NavItem>
             <div className="menu">
               <Button startIcon={<MenuIcon color="white" />}></Button>
             </div>

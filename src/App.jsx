@@ -3,12 +3,13 @@ import "./App.scss";
 import { useEffect, useState } from "react";
 import { MainService } from "./services/WhatweDoService";
 import Navbar from "./components/NavBar";
-import Hero from "./components/Hero";
-import WhatWeDo from "./components/WhatWedo";
-import Brands from "./components/Brands";
+
 import Section from "./components/Section";
 import Footer from "./components/Footer";
-import CaseStudies from "./components/CaseStudies";
+import Hero from "./sections/Hero";
+import WhatWeDo from "./sections/WhatWedo";
+import CaseStudies from "./sections/CaseStudies";
+import Brands from "./sections/Brands";
 const App = () => {
   return (
     <div className="app--main">
